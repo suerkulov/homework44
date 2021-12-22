@@ -1,8 +1,8 @@
 from django.urls import path
 
-from webapp.views import check_view, game_history
+from webapp.views import index_view, history_view
 
 urlpatterns = [
-    path('', check_view),
-    path('history/', game_history)
+    path('', index_view),
+    path('history/', history_view)
 ]
